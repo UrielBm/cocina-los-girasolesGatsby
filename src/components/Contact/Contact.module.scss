@@ -1,0 +1,20 @@
+$bg: #ff8303;
+$white: #fffafa;
+$letter: #a35709;
+$letterActive: #1b1a17;
+$warning: #6e0909;
+$gray: #bbbaba;
+.link {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  .text {
+    font-size: 1rem;
+    color: $bg;
+    font-weight: 700;
+    margin-left: 0.5rem;
+  }
+  .img {
+    z-index: -1;
+  }
+}

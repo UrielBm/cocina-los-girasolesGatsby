@@ -1,0 +1,33 @@
+$bg: #ff8303;
+$white: #fffafa;
+$letter: #a35709;
+$letterActive: #1b1a17;
+$warning: #6e0909;
+$gray: #bbbaba;
+.wrapperHero {
+  width: 100%;
+  margin-bottom: 1rem;
+  z-index: 0;
+  .wrapperBackgroundImg {
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    .HeroData {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(
+        rgba(0, 104, 71, 0.5),
+        rgba(206, 17, 38, 0.5)
+      );
+      .wrapperTitle {
+        backdrop-filter: blur(0.2rem);
+        -webkit-backdrop-filter: blur(0.2rem);
+        padding: 1.5rem;
+      }
+    }
+  }
+}

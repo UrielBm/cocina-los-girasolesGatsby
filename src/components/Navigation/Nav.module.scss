@@ -1,0 +1,60 @@
+$bg: #ff8303;
+$white: #fffafa;
+$letter: #a35709;
+$letterActive: #1b1a17;
+.nav {
+  position: fixed;
+  height: 100vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 6.5rem 0 0 0;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+  border-right: 1px solid $bg;
+  background-color: $white;
+  .link {
+    width: 10rem;
+    text-decoration: none;
+    color: $letter;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    .wrapperico {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.3rem;
+      .ico {
+        fill: $letterActive;
+      }
+    }
+  }
+  .linkActive {
+    @extend .link;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $letterActive;
+    border-bottom: 1px solid $letter;
+    .wrapperico {
+      margin-right: 0.3rem;
+      .ico {
+        fill: $letter;
+      }
+    }
+  }
+  @media screen and (min-width: 900px) {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border-right: none;
+    .link {
+      margin-bottom: 0rem;
+    }
+    .linkActive {
+      margin-bottom: 0rem;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+$bg: #ff8303;
+$white: #fffafa;
+$letter: #a35709;
+$letterActive: #1b1a17;
+$warning: #6e0909;
+$gray: #bbbaba;
+.wrapperDesayunos {
+  width: 100%;
+  .wrapperTitle {
+    margin-bottom: 1rem;
+  }
+  .desayunos {
+    width: 100%;
+    margin: 0 auto;
+    .desayuno {
+      width: 100%;
+      text-align: start;
+      padding: 2rem;
+      .wrapperImg {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 50%;
+        margin: 0 auto 1rem auto;
+        -webkit-box-shadow: 0px 8px 9px -2px rgba(255, 131, 3, 0.54);
+        box-shadow: 0px 8px 9px -2px rgba(255, 131, 3, 0.54);
+        z-index: -1;
+        .img {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .wrapperInfo {
+        .text {
+          width: 100%;
+          margin-bottom: 0.5rem;
+          overflow-wrap: break-word;
+          .name {
+            color: $letter;
+            font-weight: 400;
+          }
+          .desc {
+            color: $letterActive;
+            font-size: 0.9rem;
+          }
+          .precio {
+            color: $bg;
+            font-weight: 500;
+            font-size: 1.2rem;
+          }
+          .avalible {
+            font-weight: 700;
+            color: #10522f;
+          }
+          .disable {
+            font-weight: 700;
+            color: #6e0909;
+          }
+          .recordatorio {
+            font-size: 0.75rem;
+            color: gray;
+          }
+        }
+      }
+    }
+    .wrapperContact {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 60rem;
+    margin: 2rem auto 0 auto;
+    .desayunos {
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .desayuno {
+        max-width: 25rem;
+        border: 1px solid $letter;
+        border-radius: 0.9rem;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}

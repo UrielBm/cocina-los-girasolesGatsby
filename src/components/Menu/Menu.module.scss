@@ -1,0 +1,170 @@
+$bg: #ff8303;
+$white: #fffafa;
+$letter: #a35709;
+$letterActive: #1b1a17;
+$warning: #6e0909;
+$gray: #bbbaba;
+.wrapperMenu {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 1rem 0;
+  .wrappertitle {
+    margin-bottom: 0.4rem;
+  }
+  .wrapperupdate {
+    display: flex;
+    margin-bottom: 0.4rem;
+    justify-content: flex-end;
+    .update {
+      font-size: 0.8rem;
+      color: $warning;
+      font-weight: 500;
+    }
+  }
+  .wrapperContact {
+    margin: 1rem 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .wrapperSopas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    .wrapperSopa {
+      width: 50%;
+      &:nth-child(1) {
+        margin-bottom: 0.3rem;
+      }
+      &:nth-child(2) {
+        margin-bottom: 0.3rem;
+      }
+      .sopa {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .wrappercomidas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    .comida {
+      font-size: 0.9rem;
+      color: $letterActive;
+    }
+    .costo {
+      font-size: 0.8rem;
+      color: $letter;
+      font-weight: 700;
+    }
+  }
+  .wrapperpostres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    .postre {
+      font-size: 0.9rem;
+      color: $letterActive;
+    }
+    .costo {
+      font-size: 0.8rem;
+      color: $letter;
+      font-weight: 700;
+    }
+  }
+  .wrapperaviso {
+    @extend .wrapperpostres;
+    .aviso {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $warning;
+    }
+    .costo {
+      font-size: 0.85rem;
+      color: $warning;
+      font-weight: 700;
+    }
+  }
+  .wrapperPaquete {
+    width: 100%;
+    text-align: center;
+    .incluye {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $letterActive;
+    }
+    .mesage {
+      font-size: 0.78rem;
+      color: $gray;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 45rem;
+    margin: 2rem auto;
+    .wrappertitle {
+      margin-bottom: 1.5rem;
+    }
+    .wrapperupdate {
+      display: flex;
+      margin-bottom: 1.5rem;
+      justify-content: flex-end;
+      .update {
+        font-size: 1.1rem;
+        color: $warning;
+        font-weight: 700;
+      }
+    }
+    .wrapperSopas {
+      margin-bottom: 0.8rem;
+      .wrapperSopa {
+        .sopa {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .wrappercomidas {
+      margin-bottom: 0.8rem;
+      .comida {
+        font-size: 1.3rem;
+      }
+      .costo {
+        font-size: 1rem;
+      }
+    }
+    .wrapperpostres {
+      margin-bottom: 0.8rem;
+      .postre {
+        font-size: 1.3rem;
+      }
+      .costo {
+        font-size: 1rem;
+      }
+    }
+    .wrapperaviso {
+      margin-bottom: 0.8rem;
+      .aviso {
+        font-size: 1.3rem;
+      }
+      .costo {
+        font-size: 1rem;
+      }
+    }
+    .wrapperPaquete {
+      margin-bottom: 0.8rem;
+
+      .incluye {
+        font-size: 1.5rem;
+      }
+      .mesage {
+        font-size: 1rem;
+      }
+    }
+  }
+}

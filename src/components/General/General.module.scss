@@ -1,0 +1,72 @@
+$bg: #ff8303;
+$white: #fffafa;
+$letter: #a35709;
+$letterActive: #1b1a17;
+.title {
+  font-family: "Monoton", cursive;
+  font-size: 2.5rem;
+  color: $bg;
+  line-height: 3rem;
+  @media screen and (min-width: 900px) {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+.subtitle {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: $bg;
+  @media screen and (min-width: 900px) {
+    font-size: 1.8rem;
+  }
+}
+
+.wrapperdescription {
+  text-align: start;
+  .title {
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  .description {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+.links {
+  font-weight: 700;
+  color: $letter;
+  font-size: 1.3rem;
+}
+
+.wrapperForm {
+  margin: 1rem 0;
+  .select {
+    border-radius: 2rem;
+    border-color: $bg;
+    width: 340px;
+    padding: 0.5rem;
+    text-align: center;
+    appearance: none;
+    font-size: 1rem;
+    outline: none;
+  }
+}
+
+.wrapperSocialNetwork {
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+  .link {
+    .img {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}

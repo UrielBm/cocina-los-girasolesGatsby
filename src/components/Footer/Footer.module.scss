@@ -1,0 +1,15 @@
+$bg: #ff8303;
+$white: #fffafa;
+$letter: #a35709;
+$letterActive: #1b1a17;
+.wrapperFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  border-top: solid 1px $bg;
+  color: $letterActive;
+}
