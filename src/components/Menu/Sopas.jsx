@@ -5,7 +5,7 @@ const Sopas = ({ sopas }) => {
   return (
     <div>
       <div className={Styles.wrappertitle}>
-        <Subtitle subtitle="Primeras sopas" />
+        <Subtitle subtitle="Primer tiempo" />
       </div>
       <div className={Styles.wrapperSopas}>
         {sopas.length !== 0 ? (

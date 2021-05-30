@@ -5,6 +5,9 @@ import Postres from "./Postres"
 const Comidas = ({ comidas, postres }) => {
   return (
     <div>
+      <div className={Styles.wrapperupdate}>
+        <p className={Styles.update}>guisados disponibles despues de las 12</p>
+      </div>
       <div className={Styles.wrappertitle}>
         <Subtitle subtitle="Guisado" />
       </div>

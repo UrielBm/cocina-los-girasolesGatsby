@@ -63,7 +63,7 @@ const Platillos = ({ platillo }) => {
       </div>
       <div className={Styles.wrapperContact}>
         <Contact
-          text={`Hola buenos días, me gustaría ordernar el desayuno de ${Nombre}`}
+          text={`Hola buenos días, me gustaría ordernar del menú ${Nombre}`}
         />
       </div>
     </article>

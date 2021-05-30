@@ -5,7 +5,7 @@ const SocialNetworks = () => {
   return (
     <div className={Styles.wrapperSocialNetwork}>
       <a
-        href="https://www.facebook.com/"
+        href="https://www.facebook.com/Cocina-los-Girasoles-Pachuca-de-Soto-104129295220001"
         target="_black"
         rel="noreferrer"
         className={Styles.link}
